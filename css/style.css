@@ -9,7 +9,6 @@ REGOLE GENERALI
 */
 body{
     background-color: var(--bg-albums);
-    font-family: ;
 }
 
 
@@ -18,8 +17,9 @@ body{
 PALETTE COLORI
 */
 :root{
-
+    --bg-upgrade: rgba(0,0,0, 0.4);
     --bg-albums: #1c1f26;
+    --bg-aside: #000;
     --bg-player: #2c2c2c;
 }
 
@@ -27,6 +27,38 @@ PALETTE COLORI
 /*
 STILE SEZIONE ASIDE
 */
+aside{
+    background-color: var(--bg-aside);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 100px);
+}
+
+/*
+STILE SEZIONE UPGRADE
+*/
+#upgrade{
+    background-color: var(--bg-upgrade);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 250px;
+}
+
+
+/*
+STILE SEZIONE MAIN
+*/
+#albums{
+    overflow: auto;
+    margin-left: 250px;
+    padding-top: 100px;
+    width: calc(100% - 250px);
+    height: calc(100vh - 100px);
+}
 
 
 
@@ -39,7 +71,8 @@ STILE SEZIONE PLAYER*/
     height: 100px;
     width: 100%;
     background-color: var(--bg-player);
-    position: absolute;
+    position: sticky;
     bottom: 0;
     left: 0;
+    z-index: 999;
 }
