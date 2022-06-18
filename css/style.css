@@ -9,12 +9,13 @@ REGOLE GENERALI
 */
 body{
     background-color: var(--bg-albums);
+    font-family: 'Roboto', sans-serif;
 }
 
 
 
 /*
-PALETTE COLORI
+PALETTE COLORI E STILE COMUNE
 */
 :root{
     --bg-upgrade: rgba(0,0,0, 0.4);
@@ -22,11 +23,16 @@ PALETTE COLORI
     --bg-aside: #000;
     --bg-player: #2c2c2c;
 
-    --txt-white: #fff;
+    --txt-white: white;
+    --txt-gray: gray;
 }
 
 .txt-white{
     color: var(--txt-white);
+}
+
+.txt-gray{
+    color: var(--txt-gray);
 }
 
 .bold{
@@ -101,4 +107,33 @@ STILE SEZIONE PLAYER*/
     bottom: 0;
     left: 0;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#player-track{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-song{
+    display: flex;
+    align-items: center;
+}
+
+.player-song img{
+    width: 60px;
+    border: 2px solid white
+}
+
+.player-song-txt{
+    margin: 0 10px;
+}
+
+#player>*{
+    width: 300px;
+    height: 50px;
 }
