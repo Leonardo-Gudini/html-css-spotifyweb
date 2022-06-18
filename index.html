@@ -20,28 +20,68 @@
 
     <main>
 
-        <aside>
+        <aside id="sidebar" class="flex">
 
-            <div class="logo">
-                <img src="img/logo.svg" alt="">
+            <div class="nav-playlist-container">
+
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Logo Spotify">
+                </div>
+
+                <nav>
+                    <ul class="list txt-gray">
+                        <li class="flex">
+                            <img class="nav-icon" src="img/home.svg" alt="Home">
+                            <span class="bold txt-gray">Home</span>
+                        </li>
+                        <li class="flex">
+                            <img class="nav-icon" src="img/search.svg" alt="Cerca">
+                            <span class="bold txt-gray">Cerca</span>
+                        </li>
+                        <li class="flex">
+                            <img class="nav-icon" src="img/libreria.svg" alt="Libreria">
+                            <span class="bold txt-gray">La tua libreria</span>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div id="playlist">
+                    <h4 class="uppercase txt-white playlist-title">playlist</h4>
+    
+                    <div class="add-playlist flex">
+                        <span>
+                            <i class="fas fa-plus-square txt-gray"></i>
+                        </span>
+                        <span class="txt-gray">
+                            Crea Playlist
+                        </span>
+                    </div>
+    
+                    <ul class="list txt-gray bold">
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
             </div>
 
-            <nav>
-                <ul class="list txt-gray">
-                    <li class="flex">
-                        <img class="nav-icon" src="img/home.svg" alt="Home">
-                        <span class="bold txt-gray">Home</span>
-                    </li>
-                    <li class="flex">
-                        <img class="nav-icon" src="img/search.svg" alt="Cerca">
-                        <span class="bold txt-gray">Cerca</span>
-                    </li>
-                    <li class="flex">
-                        <img class="nav-icon" src="img/libreria.svg" alt="Libreria">
-                        <span class="bold txt-gray">La tua libreria</span>
-                    </li>
-                </ul>
-            </nav>
+            <div id="profile" class="z-index">
+                <div class="install-app flex">
+                    <img src="img/download.svg" alt="Download">
+                    <span class="txt-gray ">Installa app</span>
+                </div>
+
+                <hr class="txt-gray">
+
+                <div class="profile-name flex">
+                    <img src="img/profile.svg" alt="Profile Pic">
+                    <span class="txt-white bold">Leonardo Gudini</span>
+                </div>
+            </div>
 
 
         </aside>
@@ -50,7 +90,7 @@
 
             <div id="upgrade" class="flex">
 
-                <button class="button txt-white bold">effettua l'upgrade</button>
+                <button class="button txt-white bold uppercase">effettua l'upgrade</button>
 
             </div>
 
