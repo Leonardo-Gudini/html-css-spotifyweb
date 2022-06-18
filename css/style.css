@@ -39,6 +39,15 @@ PALETTE COLORI E STILE COMUNE
     font-weight: bold;
 }
 
+.txt-align{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
 
 /*
 STILE SEZIONE ASIDE
@@ -62,8 +71,6 @@ STILE SEZIONE UPGRADE
     position: fixed;
     top: 0;
     left: 250px;
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
 }
 
@@ -98,7 +105,8 @@ STILE SEZIONE MAIN
 
 
 /*
-STILE SEZIONE PLAYER*/
+STILE SEZIONE PLAYER
+*/
 #player{
     height: 100px;
     width: 100%;
@@ -107,33 +115,109 @@ STILE SEZIONE PLAYER*/
     bottom: 0;
     left: 0;
     z-index: 999;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
 }
 
+/*
+STILE PLAYER SONG
+*/
 #player-track{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.player-song{
-    display: flex;
-    align-items: center;
+    width: 250px;
 }
 
 .player-song img{
-    width: 60px;
+    width: 50px;
     border: 2px solid white
 }
 
 .player-song-txt{
     margin: 0 10px;
+    font-size: 0.8rem;
 }
 
+.track-icon{
+    margin-left: 6px;
+}
+
+.track-icon i{
+    margin: 0 2px;
+}
+
+
+/*
+STILE PLAYER CONTROL
+*/
+.player-icon{
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.player-icon i{
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+.player-icon .play{
+    font-size: 2rem;
+}
+
+.player-bar span{
+    font-size: 0.8rem;
+}
+
+#player .bar{
+    width: 500px;
+    height: 5px;
+    margin: 0 10px;
+    border-radius: 20px;
+    background-color: var(--txt-gray);
+}
+
+#player .bar-white{
+    height: 100%;
+    width: 30%;
+    background-color: var(--txt-white);
+}
+
+/*
+STILE PLAYER VOLUME
+*/
+#player-volume{
+    justify-content: flex-end;
+    width: 250px;
+}
+
+#player-volume .bar{
+    width: 80px;
+    height: 5px;
+    background-color: var(--txt-gray);
+}
+
+#player-volume i{
+    margin: 0 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+DEBUG PLAYER DIVS
+*/
 #player>*{
-    width: 300px;
+    /* width: 400px; */
     height: 50px;
+    /* background-color: lightgray; */
 }

@@ -27,7 +27,7 @@
 
         <section id="main-section">
 
-            <div id="upgrade">
+            <div id="upgrade" class="flex">
 
                 <button class="button txt-white bold">effettua l'upgrade</button>
 
@@ -45,10 +45,10 @@
         </section>
     </main>
 
-    <section id="player">
+    <section id="player" class="flex">
 
-        <div id="player-track">
-            <div class="player-song">
+        <div id="player-track" class="flex">
+            <div class="player-song flex">
                 <img src="img/player-song.jpeg" alt="Player Song">
                 <div class="player-song-txt">
                     <div class="txt-white bold">You Are The Reason</div>
@@ -56,15 +56,42 @@
                 </div>
             </div>
 
-            <div class="track-icon">
-                <span></span>
-                <span></span>
+            <div class="track-icon txt-gray">
+                <span><i class="fas fa-heart"></i></span>
+                <span><i class="fas fa-folder"></i></span>
             </div>
         </div>
 
-        <div id="player-control"></div>
+        <div id="player-control">
 
-        <div id="player-volume"></div>
+            <div class="player-icon txt-white flex">
+                <span><i class="fas fa-random"></i></span>
+                <span><i class="fas fa-step-backward"></i></span>
+                <span><i class="fas fa-play-circle play"></i></span>
+                <span><i class="fas fa-step-forward"></i></span>
+                <span><i class="fas fa-redo"></i></span>
+            </div>
+
+            <div class="player-bar flex">
+                <span class="txt-white bold">0:25</span>
+                <div class="bar">
+                    <div class="bar-white"></div>
+                </div>
+                <span class="txt-white bold">3:24</span>
+            </div>
+        </div>
+
+        <div id="player-volume" class="flex">
+
+            <span><i class="fas fa-list txt-white"></i></span>
+            <span><i class="fas fa-desktop txt-white"></i></span>
+            <span><i class="fas fa-volume-up txt-white"></i></span>
+                
+            <div class="bar">
+                <div class="bar-white"></div>
+            </div>
+
+        </div>
 
 
     </section>
