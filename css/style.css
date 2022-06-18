@@ -21,6 +21,16 @@ PALETTE COLORI
     --bg-albums: #1c1f26;
     --bg-aside: #000;
     --bg-player: #2c2c2c;
+
+    --txt-white: #fff;
+}
+
+.txt-white{
+    color: var(--txt-white);
+}
+
+.bold{
+    font-weight: bold;
 }
 
 
@@ -42,10 +52,24 @@ STILE SEZIONE UPGRADE
 #upgrade{
     background-color: var(--bg-upgrade);
     height: 100px;
-    width: 100%;
+    width: calc(100vw - 250px);
     position: fixed;
     top: 0;
     left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#upgrade .button{
+    text-transform: uppercase;
+    margin-right: 50px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 15px 40px;
+    cursor: pointer;
 }
 
 
@@ -55,10 +79,12 @@ STILE SEZIONE MAIN
 #albums{
     overflow: auto;
     margin-left: 250px;
-    padding-top: 100px;
+    padding: 150px 50px 0 50px;
     width: calc(100% - 250px);
     height: calc(100vh - 100px);
 }
+
+
 
 
 
