@@ -25,6 +25,8 @@ PALETTE COLORI E STILE COMUNE
 
     --txt-white: white;
     --txt-gray: gray;
+
+    --green-border: #c8ff4b;
 }
 
 .txt-white{
@@ -59,6 +61,10 @@ PALETTE COLORI E STILE COMUNE
 
 .z-index{
     z-index: 999;
+}
+
+.mar-top{
+    margin-top: 40px;
 }
 
 
@@ -183,10 +189,57 @@ STILE SEZIONE MAIN
 #albums{
     overflow: auto;
     margin-left: 250px;
-    padding: 150px 50px 0 50px;
+    padding: 115px 50px 20px 50px;
     width: calc(100% - 250px);
     height: calc(100vh - 100px);
 }
+
+.albums-menu ul{
+    margin-top: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.albums-menu ul li{
+    margin: 5px 15px;
+}
+
+#albums .albums-menu li:first-child{
+    border-bottom: 2px solid var(--green-border);
+}
+
+
+
+
+/*
+STILE ALBUMS SECTION
+*/
+#main-section .albums-section h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.albums-section ul{
+    flex-wrap: wrap;
+    margin-left: -10px;
+    align-items: baseline;
+}
+
+.albums-section li img{
+    width: 100%;
+    height: 100%;
+}
+
+.albums-section ul li{
+    width: calc(100% / 6 - 20px);
+    height: 100%;
+    margin: 0 10px;
+}
+
+.albums-section h4{
+    margin: 15px 0 5px 0;
+}
+
 
 
 
