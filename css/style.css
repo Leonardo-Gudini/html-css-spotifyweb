@@ -442,3 +442,24 @@ nav li span:hover,
 #player .bar:hover .bar-white{
     background-color: var(--green-border);
 }
+
+/*
+MEDIA QUERY
+*/
+@media screen and (max-width: 992px){
+    .albums-section ul li{
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .albums-section ul li{
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (max-width: 576px){
+    .albums-section ul li{
+        width: calc(100% - 20px);
+    }
+}
