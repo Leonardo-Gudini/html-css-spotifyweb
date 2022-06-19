@@ -133,6 +133,12 @@ nav li .nav-icon{
     margin-right: 10px;
 }
 
+nav li:first-child{
+    border-left: 2px solid var(--green-border);
+    margin-left: -20px;
+    padding-left: 18px;
+}
+
 #playlist .add-playlist{
     margin-top: 10px;
 }
@@ -360,6 +366,17 @@ STILE PLAYER CONTROL
     height: 100%;
     width: 30%;
     background-color: var(--txt-white);
+    justify-content: flex-end;
+}
+
+#player .circle-player-bar{
+    height: 15px;
+    width: 15px;
+    margin-right: -7px;
+    border-radius: 50%;
+    background: var(--txt-white);
+    display: none;
+
 }
 
 /*
@@ -383,25 +400,45 @@ STILE PLAYER VOLUME
 
 
 /*
-STILE HOOVER
+STILE HOVER
 */
 
-.albums-section .overlay-container:hover .overlay, .albums-section .overlay-container:hover .overlay-text{
+.albums-section .overlay-container:hover .overlay, 
+.albums-section .overlay-container:hover .overlay-text,
+#player .bar:hover .circle-player-bar{
     display: block;
 }
 
-.overlay-text:hover{
+.button:hover, #player-control .play:hover{
+    transform: scale(1.1);
+}
+
+.albums-menu li:hover,
+#sidebar li:hover,
+nav li span:hover,
+.add-playlist:hover .hover,
+#profile span:hover,
+#player-track i:hover{
+    color: var(--txt-white);
+}
+
+.albums-menu li:hover,
+#sidebar li:hover,
+nav li span:hover,
+.add-playlist:hover .hover,
+#profile span:hover,
+.overlay-text:hover,
+.player-song div.txt-gray:hover,
+#player-track i:hover,
+#player-control .play:hover,
+#player .bar:hover{
     cursor: pointer;
 }
 
+.player-song div.txt-gray:hover{
+    text-decoration: underline;
+}
 
-
-
-
-
-
-
-
-
-
-
+#player .bar:hover .bar-white{
+    background-color: var(--green-border);
+}
